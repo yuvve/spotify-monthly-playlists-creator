@@ -41,7 +41,7 @@ def get_starting_date_from_user():
     while not correct_format:
         try:
             days = int(days_str)
-        except TypeError:
+        except ValueError:
             days_str = input("Please type a number!")
         else:
             correct_format = True
